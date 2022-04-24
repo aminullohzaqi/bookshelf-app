@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf App</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="content">
+        <div class="card" id="add-book">
+            <h2 class="text-center">Tambah Buku</h2>
+            <form class="form" action="#" id="form">
+                <div class="form-group form-title">
+                    <label for="title">Judul Buku</label>
+                    <input type="text" id="title" name="title" required>
+                </div>
+                <div class="form-group form-title">
+                    <label for="penulis">Penulis</label>
+                    <input type="text" id="penulis" name="penulis" required>
+                </div>
+                <div class="form-group form-title">
+                    <label for="tahun">Tahun</label>
+                    <input type="number" id="tahun" name="tahun" required>
+                </div>
+                <div class="form-group form-title">
+                    <label for="tahun">Selesai Dibaca</label>
+                    <select name="selesai" id="selesai">
+                        <option value="false">Belum Selesai</option>
+                        <option value="true">Selesai</option>
+                    </select>
+                </div>
+                <input type="submit" value="Submit" name="Submit" class="btn-submit">
+            </form>
+        </div>
+        <aside class="card" id="book-list-container">
+            <header id="header-book-list">
+                <div class="form-group">
+                    <input type="text" id="search-book" name="search-book" placeholder="Cari Buku Terdaftar...">
+                </div>
+                <nav id="navigation">
+                    <ul>
+                        <li class="active" id="btn-read-not-completed">Masih Dibaca</li>
+                        <li id="btn-read-completed">Selesai Dibaca</li>
+                    </ul>
+                </nav>
+            </header>
+            <section>
+                <ul id="read-not-completed">
+                </ul>
+            </section>
+            <section>
+                <ul id="read-completed">
+                </ul>
+            </section>
+        </aside>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

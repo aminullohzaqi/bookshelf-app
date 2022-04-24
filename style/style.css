@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    display: flex;
+}
+
+#add-book {
+    position: sticky;
+    top: 0;
+    flex-basis: 25%;
+    height: 100%;
+}
+
+#book-list-container {
+    flex-basis: 75%;
+    height: 100%;
+}
+
+.card {
+    padding: 16px;
+    margin: 16px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 4px;
+    font-size: 18;
+    font-weight: lighter;
+}
+
+.form-title {
+    margin: auto 0;
+}
+
+input[type=text], input[type=number], select {
+    background: #f7f5fa;
+    border: 2px solid #B667F1;
+    border-radius: 8px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+    font-size: 1em;
+}
+
+.btn-submit {
+    width: fit-content;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 24px;
+    border:2px solid #B667F1;
+    color: black;
+    font-size: 1em;
+    margin-top: auto;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background: #B667F1;
+    color: white;
+}
+
+input[type=text], input[type=number], select, .btn-submit:focus {
+    outline: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+#header-book-list {
+    margin-bottom: 30px;
+}
+
+nav li {
+    display: inline;
+    padding: 10px 20px;
+    margin: 10px 16px 10px 0;
+    cursor: pointer;
+}
+
+nav a {
+    color: #000000;
+    text-decoration: none;
+}
+
+nav li:hover {
+    background-color: #ECC488;
+    border-radius: 20px;
+    color: #000000;
+}
+
+nav li:active {
+    background-color: #8A39E1;
+    border-radius: 20px;
+    color: #f5f5f5;
+}
+
+nav .active {
+    background-color: #8A39E1;
+    border-radius: 20px;
+    color: #f5f5f5;
+}
+
+section ul {
+    list-style-type: none;
+}
+
+section li {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(182, 103, 241, 0.1);
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #B667F1;
+    padding: 1px 10px 10px 10px;
+    margin-bottom: 20px;
+}
+
+#read-completed {
+    display: none;
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+.book-info {
+    margin-right: 10px;
+    font-size: 1em;
+}
+
+.button-book-list {
+    margin: 30px 10px 10px 0px;
+}
+
+.button-icon {
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+    .content {
+        display: block;
+    }
+
+    #add-book {
+        position: static;
+    }
+
+    section li {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .button-icon {
+        height: 30px;
+        width: 30px;
+        margin-left: 3px;
+    }
+
+    nav li {
+        display: inline;
+        padding: 10px 15px;
+        margin: 10px 20px 10px -30px;
+        cursor: pointer;
+    }
+
+    section li {
+        background-color: rgba(182, 103, 241, 0.1);
+        border-radius: 10px;
+        border-style: solid;
+        border-width: 3px;
+        border-color: #B667F1;
+        padding: 1px 5px 10px 10px;
+        margin-left: -30px;
+        margin-bottom: 20px;
+    }
+}
